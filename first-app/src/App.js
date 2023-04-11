@@ -7,21 +7,20 @@ function App() {
   const lastName = 'UZUMAKI';
   const Age = '28';
   const Job = 'Team Leader';
-  const getFullName = (firstName,lastName) => `${firstName} ${lastName}`
-  const inputPlaceholder = "ENTER YOUR NAME"
+ // const getFullName = (firstName,lastName) => `${firstName} ${lastName}`
+ // const inputPlaceholder = "ENTER YOUR NAME"
   const mArr = [1,5,4,6]
   
 
   return (
-    <div className="App">
-      <h3>Full Name: {getFullName(firstName,lastName)}</h3>
-      <p>Age: {Age}</p>
-      <p>Job: {Job}</p>
-      {mArr[3]}
+     <div className = "App">
+      <h3>Full Name:{`${firstName}  ${lastName}`}</h3>
+      <p>Age: {age}</p>
+      <p>job: {Job}</p>
 
-      <input placeholder={inputPlaceholder}
-      />
-    </div>
+     </div>
+
+   
   );
 }
 
