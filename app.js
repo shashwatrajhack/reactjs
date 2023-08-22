@@ -1,11 +1,17 @@
+import { getElementById } from "domutils";
 import React from "react"
 import ReactDOM from "react-dom/client"
 
 
-const heading = React.createElement("h1",{
-    id:"heading",xyz:'abs'
-},"Hello World from react!");
+const Title=() => <h1 id="heading">Namaste React </h1>;
+console.log(Title);
 
-console.log(heading);
- const root = ReactDOM.createRoot(document.getElementById("root"));
- root.render(heading);
+const HeadingComponent = () => (
+    <div id="container">
+        <Title />
+        <h1 className="heading">this is react component</h1>
+    </div>
+);
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(<HeadingComponent/>)
